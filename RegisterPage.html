@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegisterPage</title>
+    <link rel="stylesheet" href="register.css" >
+</head>
+<body>
+   <div><!--Body starts here-->
+    
+<!--Form starts here-->
+    <div class="wrapper">
+    <form>
+        <div class="Accountheadline">
+    <!--heading starts here-->
+    <div class="heading">
+     <h1>CREATE ACCOUNT</h1>
+ </div>
+  <!--heading ends here-->
+
+   <!--Code for Previewing Profile pic starts-->
+   <div id="previewContainer">
+    <h3>User Profile Pic:</h3>
+    <img id="preview" src="https://www.nicepng.com/png/full/128-1280406_user-icon-png.png" alt="Profile Picture Preview" style="width: 100px; height: 100px;background-color: white; border-radius: 49px;">
+  </div>
+ 
+   <!--Code for Previewing Profile pic ends--> 
+ 
+    
+     </div>
+<!--Personal information-->      
+ <div class="PersonalInfo_Block">
+<h3>Personal Information</h3>
+
+<!--Code for name starts-->
+<div class="input_field">
+    <div><label for="name">Name:</label></div>
+    <div><input type="text" id="name" placeholder="Enter your Full name" required></div>
+</div>
+<!--Code for name ends-->
+
+ <!--Code for email starts-->
+<div class="input_field">
+    <div><label for="email">Email Address:</label></div>
+    <div><input id="email" type="email" placeholder="Enter your email in ***@.***" ></div>
+</div>
+<!--Code for email ends-->
+
+<!--Code for password starts-->
+<div class="input_field">
+    <div><label for="password">Password:</label></div>
+    <div>
+        <input type="password" id="password" placeholder="Enter password" >
+        <span class="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
+    </div>
+</div>
+<!--Code for password ends-->
+
+<!
+
+<!--Code for gender starts-->
+<div class="input_field">
+    <div><label for="gender">Gender:</label></div>
+   <div class="genders">
+    <div><input type="radio" id="gender" name="gender">Male</div>
+    <div><input type="radio" id="gender" name="gender">Female</div>
+   </div>
+    
+</div>
+<!--Code for gender ends-->
+
+<!--Attaching/Uploading a profile pic code starts -->
+            <div>
+                <label for="profilePic">Upload profile pic: <span class="max">Max size 400mb</span></label>
+                <input type="file" id="profilePic" accept="image/*" required>
+            </div>
+<!--Attaching/Uploading a profile pic code ends -->
+
+</div> <!--DIV for personal info Ends here-->
+
+<!--Code FOR address details starts here--> 
+<div class="Address_Block">
+    <h3>Address Details</h3>
+    
+<div class="input_field">
+    <div><label for="address">Address line one:</label></div>
+    <div><input type="text" id="address"></div>
+</div>
+<div class="input_field">
+    <div><label for="address">Address line two:</label></div>
+    <div><input type="text" id="address"></div>
+</div>
+
+</div>
+<!--Code FOR address details ends here-->
+<div class="loginLink"><p>Already have an account? <a href="LoginPage.html">Login here</a></p></div>
+
+
+<!--Submit button is here-->            
+<div class="input_submit"><input id="button" type="submit" name="submit"></div>
+
+        </form>
+     </div>
+      <!--Form ends here-->
+
+    
+
+    <!--Adding Javascript code for preview profile pic-->
+<script src="register.js"></script>
+      
+
+   </div><!--Body ends here-->
+   
+
+
+</body>
+</html>
